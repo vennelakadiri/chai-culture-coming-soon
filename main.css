@@ -1,0 +1,129 @@
+:root {
+    --deep-maroon: #3d0303;
+    --royal-burgundy: #250101;
+    --gold-accent: #d4af37;
+    --gold-gradient: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, var(--deep-maroon) 0%, var(--royal-burgundy) 100%);
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    overflow: hidden;
+}
+
+/* Faint Mandala Background */
+.mandala-bg {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: url('https://www.transparenttextures.com/patterns/mandala-ornament.png');
+    opacity: 0.08;
+    z-index: 0;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.brand-title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--gold-accent);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: #fceabb;
+}
+
+.hero-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+}
+
+.status-pill {
+    display: inline-block;
+    border: 1px solid var(--gold-accent);
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: var(--gold-accent);
+}
+
+.launch-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 14px 25px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cta-button {
+    width: 100%;
+    padding: 14px 25px;
+    border-radius: 30px;
+    border: none;
+    background: var(--gold-gradient);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    color: #3d0303;
+}
+
+.cta-button:hover {
+    transform: scale(1.02);
+}
+
+.social-icons {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: var(--gold-accent);
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: white;
+}
